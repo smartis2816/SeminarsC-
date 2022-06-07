@@ -29,7 +29,7 @@ else
     Console.WriteLine("False");
 }
 
-*/
+
 
 int num, current;
 
@@ -43,3 +43,5 @@ while(current <= num)
     Console.Write(current + " ");
     current++; // current = current + 1;
 }
+
+*/
