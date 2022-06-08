@@ -20,7 +20,7 @@ else
     Console.WriteLine(num2 + " is max and " + num1 + " is min");
 }
 
-*/
+
 
 // Second task
 
@@ -54,4 +54,25 @@ else
 {
     max = num3;
     Console.WriteLine("Max number is " + max);
+}
+
+*/
+
+
+// Second task
+
+int num;
+
+Console.WriteLine("This program shows whether the number is even or odd");
+
+Console.Write("Input number: ");
+num = Convert.ToInt32(Console.ReadLine());
+
+if(num % 2 == 0)
+{
+    Console.WriteLine(num + " is even number - true");
+}
+else
+{
+    Console.WriteLine(num + " is even number - false");
 }
