@@ -47,3 +47,36 @@ int FindSecondPart()
 int result = FindSecondPart();
 Console.WriteLine($"Second part of your number is {result}");
 */
+
+// TASK2
+/*
+int FindThirdDigit(int num)
+{
+    if(num < 100 && num > -100)
+    {
+        return -1;
+    }
+    else
+    {
+        while(num > 999 ^ num < -999)
+        {
+            num /= 10;
+        }
+        return num % 10;
+    }
+}
+Console.Write("Input any number and console will show the third digit of this number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int result = FindThirdDigit(number);
+if(result == -1)
+{
+    Console.WriteLine("The number you entered doesn't contain the third digit");
+}
+else
+{
+    Console.WriteLine($"The third digit of the number {number} is {result}");
+}
+*/
+
+// TASK3
+
