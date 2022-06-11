@@ -36,7 +36,7 @@ int FindSecondPart()
 {
     Console.Write("Input three-digit number: ");
     int number = Convert.ToInt32(Console.ReadLine());
-    while(number < 100 ^ number > 999)
+    while(number < 100 && number > -100 ^ number > 999 ^ number < -999)
     {
         Console.WriteLine("Your number is not three-digit");
         Console.Write("Input three-digit number: ");
@@ -79,4 +79,18 @@ else
 */
 
 // TASK3
-
+/*
+bool WeekendOrNot(int num)
+{
+    return (num == 6 ^ num == 7);
+}
+Console.Write("Choose one of the days of the week from 1 to 7: ");
+int DayOfWeek = Convert.ToInt32(Console.ReadLine());
+while (DayOfWeek > 7 ^ DayOfWeek < 1)
+{
+    Console.Write("Wrong number. Please choose number of the day again: ");
+    DayOfWeek = Convert.ToInt32(Console.ReadLine());
+}
+if (WeekendOrNot(DayOfWeek)) Console.WriteLine("This day is weekend");
+else Console.WriteLine("This day is not weekend");
+*/
