@@ -4,7 +4,7 @@ double FindLengthIn3D (double xA, double yA, double zA, double xB, double yB, do
     return Math.Sqrt(Math.Pow((xB-xA), 2) + Math.Pow((yB - yA), 2) + Math.Pow((zB - zA), 2));
 }
 
-Console.WriteLine("Enter the coordinates of the point A in 3d space: ");
+Console.WriteLine("Enter the coordinates of the point A in 3D space: ");
 Console.Write("xA = ");
 double xA = Convert.ToDouble(Console.ReadLine());
 Console.Write("yA = ");
@@ -12,7 +12,7 @@ double yA = Convert.ToDouble(Console.ReadLine());
 Console.Write("zA = ");
 double zA = Convert.ToDouble(Console.ReadLine());
 
-Console.WriteLine("Enter the coordinates of the point B in 3d space: ");
+Console.WriteLine("Enter the coordinates of the point B in 3D space: ");
 Console.Write("xB = ");
 double xB = Convert.ToDouble(Console.ReadLine());
 Console.Write("yB = ");
