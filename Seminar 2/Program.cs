@@ -10,6 +10,7 @@
 
 // a = a / 10 <-> a /= 10 - то же самое
 
+/*
 int FindMaxPart(int num)
 {
     int dec, ed;
@@ -49,7 +50,7 @@ else
 {
     Console.WriteLine($"Bigger number of {a} is {result}");
 }
-
+*/
 
 /*
 int CutNumber()
