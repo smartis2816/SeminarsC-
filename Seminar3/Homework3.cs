@@ -61,7 +61,7 @@ Console.Write("Enter natural number N: ");
 int N = Convert.ToInt32(Console.ReadLine()); 
 while(N < 1)
 {
-    Console.Write("This program works only with natural nymbers. Please enter number N again: ");
+    Console.Write("This program works only with natural numbers. Please enter number N again: ");
     N = Convert.ToInt32(Console.ReadLine());
 }
 
