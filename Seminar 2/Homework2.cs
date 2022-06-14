@@ -91,6 +91,6 @@ while (DayOfWeek > 7 ^ DayOfWeek < 1)
     Console.Write("Wrong number. Please choose number of the day again: ");
     DayOfWeek = Convert.ToInt32(Console.ReadLine());
 }
-if (WeekendOrNot(DayOfWeek)) Console.WriteLine("This day is weekend");
+if(WeekendOrNot(DayOfWeek)) Console.WriteLine("This day is weekend");
 else Console.WriteLine("This day is not weekend");
 */
