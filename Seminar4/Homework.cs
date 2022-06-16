@@ -17,5 +17,35 @@ Console.WriteLine($"{A}^{B} = {RaisePower(A, B)}");
 */
 
 // TASK 2
+// Option 1 - программа генерирует числа
+/*
+int size = 8;
+int[] newArray = new int[size];
 
+for(int i = 0; i < size; i++)
+{
+    newArray[i] = new Random().Next(0, 9);
+}
 
+for(int i = 0; i < size; i++)
+{
+    Console.Write(newArray[i] + " ");
+}
+*/
+
+// Option 2 - пользователь вводит числа
+/*
+int size = 8;
+int[] newArray = new int[size];
+
+for(int i = 0; i < size; i++)
+{
+    Console.Write("Enter any number to fill the array: ");
+    newArray[i] = Convert.ToInt32(Console.ReadLine());
+}
+
+for(int i = 0; i < size; i++)
+{
+    Console.Write(newArray[i] + " ");
+}
+*/
