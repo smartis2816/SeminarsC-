@@ -60,7 +60,7 @@ Console.WriteLine($"Sum of numbers from 1 to A is {multiplication}");
 
 // int size = 8;
 // int[] array = new int[size];
-
+/*
 int size = 8;
 int[] array = new int[size];
 
@@ -73,3 +73,4 @@ for(int i = 0; i < size; i++)
 {
     Console.Write(array[i] + " ");
 }
+*/
