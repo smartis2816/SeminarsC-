@@ -18,9 +18,8 @@ int[] CreateRandomArray(int size, int min, int max)
 // Метод для нахождения кол-ва чётных чисел в массиве
 int HowManyEvenNums(int[] array)
 {
-    int index;
     int quatity = 0;
-    for(index = 0; index < array.Length; index++)
+    for(int index = 0; index < array.Length; index++)
     {
         if(array[index] % 2 == 0) quatity++;
     }
@@ -29,22 +28,20 @@ int HowManyEvenNums(int[] array)
 
 int min = 100;
 int max = 999;
-int size = new Random().Next(5, 101);
+int size = new Random().Next(5, 100);
 
 Console.WriteLine("This is array:");
 int[] newArray = CreateRandomArray(size, min, max);
 
 Console.WriteLine($"Quantity of even numbers in this array is {HowManyEvenNums(newArray)}");
 */
-
+/*
 // TASK 2
 // Метод для нахождения суммы элементов с нечётными позициями в массиве
-/*
 int FindSumOfOddPositions(int[] array)
 {
-    int index;
     int sum = 0;
-    for(index = 1; index < array.Length; index += 2)
+    for(int index = 1; index < array.Length; index += 2)
     {
         sum += array[index];
     }
@@ -58,15 +55,16 @@ Console.WriteLine($"Summary of numbers with odd indexes is {FindSumOfOddPosition
 */
 
 // TASK 3
+/*
 // Метод для создания массива с вещественными числами
-double[] RandomDoubleArray(int size)
+double[] RandomDoubleArray(int size, double min, double max)
 {
     double[] newArray = new double[size];
     Random rnd = new Random();
     for(int i = 0; i < size; i++)
     {
-        newArray[i] = rnd.NextDouble();
-        Console.Write(newArray[i] + " ");
+        newArray[i] = rnd.NextDouble() * (max - min) + min;
+        Console.Write(Math.Round(newArray[i], 3) + " ");
     }
     Console.WriteLine();
 
@@ -95,7 +93,16 @@ double FindMin(double[] array)
     return minEl;
 }
 
+
+Console.Write("Enter the length of array: ");
+int L = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter the minimum possible value of element: ");
+double min = Convert.ToDouble(Console.ReadLine());
+Console.Write("Enter the maximum possible value of element: ");
+double max = Convert.ToDouble(Console.ReadLine());
+
 Console.WriteLine("This is array:");
-double[] newArray3 = RandomDoubleArray(4);
+double[] newArray3 = RandomDoubleArray(L, min, max);
 double Subtraction = FindMax(newArray3) - FindMin(newArray3);
-Console.WriteLine($"Subtraction between max and min numbers in array is {Subtraction}");
+Console.WriteLine($"Subtraction between max and min numbers in array is {Math.Round(Subtraction, 3)}");
+*/
