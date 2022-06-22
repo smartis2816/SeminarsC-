@@ -18,12 +18,12 @@ int[] CreateRandomArray(int size, int min, int max)
 // Метод для нахождения кол-ва чётных чисел в массиве
 int HowManyEvenNums(int[] array)
 {
-    int quatity = 0;
+    int quantity = 0;
     for(int index = 0; index < array.Length; index++)
     {
         if(array[index] % 2 == 0) quatity++;
     }
-    return quatity;
+    return quantity;
 }
 
 int min = 100;
