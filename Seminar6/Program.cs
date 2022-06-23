@@ -49,3 +49,20 @@ for(int i = 0; i < myArray.Length; i++)
 
 
 // Не используя рекурсию, выведите первые N чисел Фибоначчи. Первые два числа Фибоначчи: 0 и 1.
+
+
+// Напишите программу, которая будет преобразовывать десятичное число в двоичное.
+/*
+string BinaryNum(int num)
+{
+    string result = string.Empty;
+    while(num > 0)
+    {
+        result = num % 2 + result;
+        num /= 2;
+    }
+    return result;
+}
+
+Console.WriteLine(BinaryNum(41));
+*/
