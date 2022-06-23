@@ -107,3 +107,38 @@ double[] newArray3 = RandomDoubleArray(L, min, max);
 double Subtraction = FindMax(newArray3) - FindMin(newArray3);
 Console.WriteLine($"Subtraction between max and min numbers in array is {Math.Round(Subtraction, 3)}");
 */
+
+/*
+double RaisePower(double A, double B)
+{
+    double count = 2;
+    double result = A;
+    while(count <= B)
+    {
+        result = result * A;
+        count++;
+    }
+    return result;
+}
+*/
+/*
+// Это переделанная задача из ДЗ к 4-му семинару, где нужно было возвести A в натуральную степень B. Теперь сделана без использования готовых методов.
+int RaisePower(int A, int B)
+{
+    int result = A;
+    for(int i = 2; i <= B; i++)
+    {
+        result *= A;
+    }
+    return result;
+}
+
+Console.Write("Enter number A: ");
+int A = Convert.ToInt32(Console.ReadLine());
+Console.Write("Enter number B: ");
+int B = Convert.ToInt32(Console.ReadLine());
+
+if(B < 1) B = B * (-1);
+
+Console.WriteLine($"{A}^{B} = {RaisePower(A, B)}");
+*/
