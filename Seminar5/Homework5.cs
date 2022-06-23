@@ -1,3 +1,4 @@
+/*
 // Метод для создания рандомного массива
 int[] CreateRandomArray(int size, int min, int max)
 {
@@ -12,7 +13,7 @@ int[] CreateRandomArray(int size, int min, int max)
 
     return newArray;
 }
-
+*/
 /*
 // TASK 1
 // Метод для нахождения кол-ва чётных чисел в массиве
