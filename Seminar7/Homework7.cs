@@ -1,3 +1,4 @@
+/*
 // TASK 1
 
 // Метод для создания рандомного двумерного массива с вещественными числами
@@ -37,8 +38,9 @@ Console.WriteLine();
 
 double[,] NewArray = CreateDoubleRandomTwoDemArray(m, n, min, max);
 ShowDoubleTwoDimArray(NewArray);
-
 */
+
+/*
 // TASK 2
 // Этот метод создаёт двумерный массив 
 int[,] CreateRandomTwoDemArray(int a, int b, int min, int max)
@@ -93,6 +95,7 @@ int GetNumbers()
 
     return num;
 }
+*/
 /*
 Console.Write("Quantity of rows. ");
 int m = GetNumbers();
@@ -116,12 +119,12 @@ Console.WriteLine();
 int value = GetValueOfElement(newArray, M, N);
 ShowValue(value);
 */
-
+/*
 // TASK 3
 // Метод для нахождения среднего арифметического столбцов
 void ArithmeticMeanColumns(int[,] array)
 {
-    double ArithmeticMean = 0;
+    double ArithmeticMean;
     double sum;
     for(int j = 0; j < array.GetLength(1); j++)
     {
@@ -150,3 +153,4 @@ int max = Convert.ToInt32(Console.ReadLine());
 int[,] newArray = CreateRandomTwoDemArray(m, n, min, max);
 ShowTwoDimArray(newArray);
 ArithmeticMeanColumns(newArray);
+*/
