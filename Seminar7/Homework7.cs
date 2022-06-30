@@ -38,7 +38,7 @@ Console.WriteLine();
 double[,] NewArray = CreateDoubleRandomTwoDemArray(m, n, min, max);
 ShowDoubleTwoDimArray(NewArray);
 */
-
+/*
 // TASK 2
 // Этот метод создаёт двумерный массив 
 int[,] CreateRandomTwoDemArray(int a, int b, int min, int max)
@@ -89,6 +89,7 @@ int RowsOrColumnsRequest()
    
     return num;
 }
+*/
 /*
 Console.Write("Rows. ");
 int m = RowsOrColumnsRequest();
@@ -112,6 +113,7 @@ Console.WriteLine(GetValueOfElement(newArray, M, N));
 */
 
 // TASK 3
+/*
 // Метод для нахождения среднего арифметического столбцов
 void ArithmeticMeanColumns(int[,] array)
 {
@@ -131,6 +133,7 @@ void ArithmeticMeanColumns(int[,] array)
     Console.WriteLine();
     } 
 }
+*/
 /*
 Console.Write("Rows. ");
 int m = RowsOrColumnsRequest();
