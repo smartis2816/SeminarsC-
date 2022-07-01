@@ -39,7 +39,7 @@ int RowsOrColumnsRequest()
 }
 
 // TASK 1
-
+// Упорядочивание элементов в строках по возрастанию
 int[,] AscendingRows(int[,] array)
 {
     int temp;
@@ -150,8 +150,8 @@ int max = Convert.ToInt32(Console.ReadLine());
 
 int[,] newArrayTask2 = CreateRandomTwoDemArray(m, n, min, max);
 ShowTwoDimArray(newArrayTask2);
-int[] SumsOfRows = FindSumsRows(newArrayTask2);
 
+int[] SumsOfRows = FindSumsRows(newArrayTask2);
 int minRow = FindRowWithMinSum(SumsOfRows);
 ShowArraySumsAndMinRow(newArrayTask2, SumsOfRows, minRow);
 
