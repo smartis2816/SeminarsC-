@@ -247,7 +247,7 @@ int[,] Spiral(int n)
 }
 */
 /*
-int n = 7;
+int n = 4;
 int[,] newArray = Spiral(n);
 ShowTwoDimArray(newArray);
 */
