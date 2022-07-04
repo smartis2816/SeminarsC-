@@ -1,3 +1,4 @@
+/*
 // Этот метод создаёт двумерный массив 
 int[,] CreateRandomTwoDemArray(int a, int b, int min, int max)
 {
@@ -59,7 +60,7 @@ int[,] AscendingRows(int[,] array)
 
     return array;
 }
-
+*/
 /*
 Console.Write("Rows. ");
 int m = RowsOrColumnsRequest();
@@ -75,7 +76,7 @@ AscendingRows(newArrayTask1);
 Console.WriteLine("Modified array.");
 ShowTwoDimArray(newArrayTask1);
 */
-
+/*
 // TASK 2
 // Метод для запроса размера матрицы и проверки введённых чисел
 int[] RectangularArrayRequest()
@@ -141,7 +142,7 @@ void ShowArraySumsAndMinRow(int[,] array, int[] array2, int minRow)
     Console.WriteLine($"The sequence number of the row with the minimum sum is {minRow + 1}");
     Console.WriteLine();
 }
-
+*/
 /*
 int[] Indexes = RectangularArrayRequest();
 int m = Indexes[0];
@@ -157,6 +158,7 @@ int[] SumsOfRows = FindSumsRows(newArrayTask2);
 int minRow = FindRowWithMinSum(SumsOfRows);
 ShowArraySumsAndMinRow(newArrayTask2, SumsOfRows, minRow);
 */
+/*
 // TASK 3
 // Первый вариант метода
 int[,] Spiral(int n)
@@ -196,7 +198,7 @@ int[,] Spiral(int n)
 
     return Matrix;
 }
-
+*/
 /*
 // Второй вариант метода
 int[,] Spiral(int n)
@@ -244,7 +246,8 @@ int[,] Spiral(int n)
     return Matrix;
 }
 */
-int n = 11;
+/*
+int n = 7;
 int[,] newArray = Spiral(n);
 ShowTwoDimArray(newArray);
-
+*/
