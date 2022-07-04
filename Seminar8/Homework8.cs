@@ -244,6 +244,7 @@ int[,] Spiral(int n)
     return Matrix;
 }
 */
-int[,] newArray = Spiral(4);
+int n = 11;
+int[,] newArray = Spiral(n);
 ShowTwoDimArray(newArray);
 
