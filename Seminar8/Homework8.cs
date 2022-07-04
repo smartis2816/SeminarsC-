@@ -33,8 +33,8 @@ int RowsOrColumnsRequest()
         Console.Write("Value of quantity must be natural number. Enter the number: ");
         num = Convert.ToInt32(Console.ReadLine());
     }
-    while(num < 1);
-   
+    while (num < 1);
+
     return num;
 }
 
@@ -43,13 +43,13 @@ int RowsOrColumnsRequest()
 int[,] AscendingRows(int[,] array)
 {
     int temp;
-    for(int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for(int j = 0; j < array.GetLength(1) - 1; j++)
+        for (int j = 0; j < array.GetLength(1) - 1; j++)
         {
-            if(array[i, j] > array[i, j + 1])
+            if (array[i, j] > array[i, j + 1])
             {
-                temp = array[i, j +1];
+                temp = array[i, j + 1];
                 array[i, j + 1] = array[i, j];
                 array[i, j] = temp;
                 j = -1;
@@ -59,6 +59,7 @@ int[,] AscendingRows(int[,] array)
 
     return array;
 }
+
 /*
 Console.Write("Rows. ");
 int m = RowsOrColumnsRequest();
@@ -88,7 +89,7 @@ int[] RectangularArrayRequest()
         N = Convert.ToInt32(Console.ReadLine());
         M = Convert.ToInt32(Console.ReadLine());
     }
-    while(N < 1 || M < 1 || N == M);
+    while (N < 1 || M < 1 || N == M);
     array[0] = N;
     array[1] = M;
     return array;
@@ -96,15 +97,15 @@ int[] RectangularArrayRequest()
 // Находит суммы элементов строк и записывает в массив
 int[] FindSumsRows(int[,] array)
 {
-    
+
     int[] Sums = new int[array.GetLength(0)];
     int k = 0;
-    for(int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
         int sum = 0;
-        for(int j = 0; j < array.GetLength(1); j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-            sum += array[i,j];
+            sum += array[i, j];
             Sums[k] = sum;
         }
         k++;
@@ -115,11 +116,11 @@ int[] FindSumsRows(int[,] array)
 int FindRowWithMinSum(int[] array)
 {
     int min = 0;
-    for(int i = 1; i < array.Length; i++)
+    for (int i = 1; i < array.Length; i++)
     {
-        if(array[min] > array[i]) min = i;
+        if (array[min] > array[i]) min = i;
     }
-    
+
     return min;
 }
 // Выводит на экран двумерный массив + суммы строк + строку с мин. суммой   
@@ -141,6 +142,7 @@ void ShowArraySumsAndMinRow(int[,] array, int[] array2, int minRow)
     Console.WriteLine();
 }
 
+/*
 int[] Indexes = RectangularArrayRequest();
 int m = Indexes[0];
 int n = Indexes[1];
@@ -154,4 +156,94 @@ ShowTwoDimArray(newArrayTask2);
 int[] SumsOfRows = FindSumsRows(newArrayTask2);
 int minRow = FindRowWithMinSum(SumsOfRows);
 ShowArraySumsAndMinRow(newArrayTask2, SumsOfRows, minRow);
+*/
+// TASK 3
+// Первый вариант метода
+int[,] Spiral(int n)
+{
+    int[,] Matrix = new int[n, n];
+    int current = 1;
+    int count = n;
+    int num = 0;
+    do
+    {
+        for(int j = num; j < count; j++) // вправо
+        {
+            Matrix[num, j] = current;
+            current ++;
+        }
+        count--;
+        for(int i = n - count; i < count + 1; i++) // вниз
+        {
+            Matrix[i, count] = current;
+            current ++;
+        }
+        for(int j = count - 1; j > num - 1; j--) // влево
+        {
+            Matrix[count, j] = current;
+            current ++;
+        }
+        count--;
+        for(int i = count; i > num; i--) // вверх
+        {
+            Matrix[i, num] = current;
+            current ++;
+        }
+        num++;
+        count++;
+    }
+    while(count > 0);
+
+    return Matrix;
+}
+
+/*
+// Второй вариант метода
+int[,] Spiral(int n)
+{
+    int[,] Matrix = new int[n, n];
+    int current = 1;
+    int count = n;
+    int num;
+    int getIndex = -1;
+    do
+    {
+        num = 1;
+        for (int j = 0; j < count; j++)
+        {
+            getIndex += num;
+            Matrix[getIndex / n, getIndex % n] = current;
+            current ++;
+        }
+        count--;
+        num = n;
+        for (int i = 0; i < count; i++)
+        {
+            getIndex += num;
+            Matrix[getIndex / n, getIndex % n] = current;
+            current ++;
+        }
+        num = -1;
+        for (int j = 0; j < count; j++)
+        {
+            getIndex += num;
+            Matrix[getIndex / n, getIndex % n] = current;
+            current ++;
+        }
+        count--;
+        num = -n;
+        for (int i = 0; i < count; i++)
+        {
+            getIndex += num;
+            Matrix[getIndex / n, getIndex % n] = current;
+            current ++;
+        }
+    }
+    while (count > 0);
+
+    return Matrix;
+}
+*/
+int[,] newArray = Spiral(4);
+ShowTwoDimArray(newArray);
 
